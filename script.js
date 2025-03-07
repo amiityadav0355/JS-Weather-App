@@ -45,7 +45,7 @@ async function getWeather() {
         errorMessage.classList.add("hidden");
     } catch (error) {
         console.error("Error fetching weather data:", error);
-        errorMessage.textContent = "City not found or API issue. Please try again.";
+        errorMessage.textContent = "City not found. Please try again.";
         errorMessage.classList.remove("hidden");
         weatherInfo.classList.add("hidden");
     }
